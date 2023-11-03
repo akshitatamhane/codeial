@@ -4,12 +4,18 @@
     <%= title%>
 </title>
 <link rel="stylesheet" href="/css/layout.css ">
+<%- style %> 
+<!--putting it at botton because individual page style overrides -->
 </head>
 <body>
+
+
 <%- include('_header'); %>
 <%- body %>
 <%- include('_footer'); %>
-</body>
 
+
+<%- script %>
+</body>
 
 </html>
